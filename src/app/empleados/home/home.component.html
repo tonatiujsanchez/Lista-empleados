@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row mt-5 container">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <app-empleados-head 
+                      [totalEmpleado]="totalEmpleado" 
+                      [totalFemenino]="totalFemenino" 
+                      [totalEmpleado]="totalEmpleado" 
+                      [totalMasculino]="totalMasculino"
+                      (onRadio)="seleccionar($event)">
+                  </app-empleados-head>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row mt-3 container">
+        <div class="col">
+            <div class="card">
+              <app-empleados-list [listaEmpleados]="listaEmpleados"></app-empleados-list>
+            </div>
+        </div>
+    </div>
+</div>

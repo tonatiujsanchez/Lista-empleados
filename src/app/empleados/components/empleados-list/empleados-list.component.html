@@ -1,0 +1,20 @@
+<table class="table">
+    <thead class="table-danger">
+        <tr>
+            <th>Legajo</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sexo</th>
+            <th>Salario</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let empleado of listaEmpleados">
+            <td class="ps-4">{{ empleado.legajo }}</td>
+            <td>{{ empleado.nombre | titlecase }}</td>
+            <td>{{ empleado.apellido | titlecase }}</td>
+            <td>{{ empleado.sexo | titlecase }}</td>
+            <td>{{ empleado.salario | currency }}</td>
+        </tr>
+    </tbody>
+</table>
